@@ -85,6 +85,24 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
 - **Backend**: Java-powered servlets and JSPs.
 - **Database**: MySQL, for storing user accounts, feedback, reservations, and transactions.
 
+## ScreenShots
+
+###Home page
+![image](https://github.com/user-attachments/assets/c3b80ad5-17b0-48dc-91b3-a848c4cca538)
+
+### Admin DashBoard
+![image](https://github.com/user-attachments/assets/b3f26aa6-66e9-4faa-8155-23792f60b879)
+
+### Feedback Page
+![image](https://github.com/user-attachments/assets/f7bccf96-4626-4e0d-852d-cff69f08c715)
+
+### Registration Page
+![image](https://github.com/user-attachments/assets/e8a28d8d-7549-4628-935e-45bce9a4874b)
+
+###Login Page
+![image](https://github.com/user-attachments/assets/e8982d01-5362-4c4d-a45a-c341b42d43fc)
+
+
 ## License
 
 This project is licensed under the MIT License.
