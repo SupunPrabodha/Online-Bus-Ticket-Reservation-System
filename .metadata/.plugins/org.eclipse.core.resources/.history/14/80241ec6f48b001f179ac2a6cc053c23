@@ -1,0 +1,113 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Payment Details</title>
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        input[type="submit"], input[type="button"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #f44336;
+            color: white;
+        }
+        input[type="button"] {
+            background-color: #3a7cdf;
+            color: white;
+        }
+        input[type="button"]:hover {
+            background-color: #447cb1;
+        }
+        input[type="submit"]:hover {
+            background-color: #e3342f;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Delete Payment Details</h1>
+
+
+ <%
+    String pid = request.getParameter("pid");
+    String passenger_name = request.getParameter("passenger_name");
+    String card_number = request.getParameter("card_number");
+    String CVV_code = request.getParameter("CVV_code");
+    String expire_date = request.getParameter("expire_date");
+    String email = request.getParameter("email");
+    String payment_amount = request.getParameter("payment_amount");
+    %>
+  <form action="delet" method="post">  
+  <input type="hidden" name="pid" value="<%= pid %>">
+    <table>
+    <tr>
+        <th>Passenger ID</th>
+        <td><%= pid %></td>
+    </tr>
+    <tr>
+        <th>Passenger Name</th>
+        <td><%= passenger_name %></td>
+    </tr>
+    <tr>
+        <th>Card Number</th>
+        <td><%= card_number %></td>
+    </tr>
+    <tr>
+        <th>CVV Code</th>
+        <td><%= CVV_code %></td>
+    </tr>
+    <tr>
+        <th>Expire Date</th>
+        <td><%= expire_date %></td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td><%= email %></td>
+    </tr>
+    <tr>
+        <th>Payment Amount</th>
+        <td><%= payment_amount %></td>
+    </tr>
+</table>
+
+   
+   <div class="button-container">
+        <input type="submit" name="submit" value="Confirm Delete">
+   </div>
+</form>
+    
+</body>
+</html>

@@ -1,0 +1,340 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Payment Details</title>
+
+<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%; /* Ensure the body takes full viewport height */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            color: #333;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        header h1 {
+            float: left;
+            margin-left: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            float: right;
+            margin-right: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background: url('css/Bus.jpg') no-repeat center center/cover;
+            min-height: 100vh; /* Ensure the hero section covers full viewport height */
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff4a4a;
+        }
+
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input,
+        button {
+            padding: 10px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        button.btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.btn:hover {
+            background-color: #ff4a4a;
+        }
+
+        
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            z-index: 10;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer .social-links li {
+            margin: 0 10px;
+        }
+
+        footer .social-links li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer .social-links li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                float: none;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            header nav ul {
+                float: none;
+                text-align: center;
+                margin: 0;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .login-section form {
+                padding: 20px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        input[type="submit"], input[type="button"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #f44336;
+            color: white;
+        }
+        input[type="button"] {
+            background-color: #3a7cdf;
+            color: white;
+        }
+        input[type="button"]:hover {
+            background-color: #447cb1;
+        }
+        input[type="submit"]:hover {
+            background-color: #e3342f;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+        <div class="container">
+            <h1>SeatReserve</h1>
+            <nav>
+                <ul>
+                    <li><a href="homepage.jsp">Home</a></li>
+                    <li><a href="#">Book a Ticket</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.jsp">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<h1>Delete Payment Details</h1>
+
+
+ <%
+    String pid = request.getParameter("pid");
+    String passenger_name = request.getParameter("passenger_name");
+    String card_number = request.getParameter("card_number");
+    String CVV_code = request.getParameter("CVV_code");
+    String expire_date = request.getParameter("expire_date");
+    String email = request.getParameter("email");
+    String payment_amount = request.getParameter("payment_amount");
+    %>
+    <section class="hero">
+  <form action="delet" method="post">  
+  <input type="hidden" name="pid" value="<%= pid %>">
+    <table>
+    <tr>
+        <th>Passenger ID</th>
+        <td><%= pid %></td>
+    </tr>
+    <tr>
+        <th>Passenger Name</th>
+        <td><%= passenger_name %></td>
+    </tr>
+    <tr>
+        <th>Card Number</th>
+        <td><%= card_number %></td>
+    </tr>
+    <tr>
+        <th>CVV Code</th>
+        <td><%= CVV_code %></td>
+    </tr>
+    <tr>
+        <th>Expire Date</th>
+        <td><%= expire_date %></td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td><%= email %></td>
+    </tr>
+    <tr>
+        <th>Payment Amount</th>
+        <td><%= payment_amount %></td>
+    </tr>
+</table>
+
+   
+   <div class="button-container">
+        <input type="submit" name="submit" value="Confirm Delete">
+   </div>
+</form>
+</section>
+    
+</body>
+</html>

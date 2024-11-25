@@ -1,0 +1,15 @@
+127.0.0.1 - - [23/Oct/2024:21:36:46 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:36:46 +0530] "GET /SeatReserve/veiwhomepage.jsp HTTP/1.1" 200 15024
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:36:46 +0530] "GET /SeatReserve/css/image1.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:36:46 +0530] "GET /SeatReserve/css/image2.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:36:46 +0530] "GET /SeatReserve/css/image3.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:36:46 +0530] "GET /SeatReserve/css/image4.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:36:47 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:37:57 +0530] "GET /SeatReserve/veiwhomepage.jsp HTTP/1.1" 200 15024
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:38:01 +0530] "GET /SeatReserve/log.jsp HTTP/1.1" 200 7994
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:38:06 +0530] "GET /SeatReserve/feedback.jsp HTTP/1.1" 200 18478
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:38:12 +0530] "GET /SeatReserve/contactus.jsp HTTP/1.1" 200 7938
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:38:25 +0530] "GET /SeatReserve/logoutServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:38:25 +0530] "GET /SeatReserve/login.jsp HTTP/1.1" 200 8018
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:38:25 +0530] "GET /SeatReserve/Style.css HTTP/1.1" 404 776
+0:0:0:0:0:0:0:1 - - [23/Oct/2024:21:38:28 +0530] "GET /SeatReserve/userinsert.jsp HTTP/1.1" 200 12110

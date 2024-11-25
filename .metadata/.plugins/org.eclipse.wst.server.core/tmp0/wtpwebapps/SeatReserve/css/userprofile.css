@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #0c2713;
+    color: white;
+    padding-top: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ff6b6b;
+    transform: translateX(10px);
+}
+
+.contact-support {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 30px;
+    transition: color 0.3s ease;
+}
+
+.contact-support:hover {
+    color: #ff6b6b;
+}
+
+.header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.bg-success{
+    --bs-bg-opacity: 1;
+  background-color: #0c2713 !important;
+}
+.avatar-img {
+    width: 50px;
+    height: 50px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.avatar-img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: rotate(360deg);
+}
+
+.profile-banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-banner img:hover {
+    transform: scale(1.05);
+}
+
+.profile-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+.profile-form input,
+.profile-form select {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-form input:focus,
+.profile-form select:focus {
+    border-color: #0c2713;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+}
+
+.profile-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-form .btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-success {
+    background-color: #0c2713;
+    border-color: #28a745;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.3);
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 8px rgba(40, 167, 69, 0.4);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    box-shadow: 0 4px 6px rgba(220, 53, 69, 0.3);
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    box-shadow: 0 6px 8px rgba(220, 53, 69, 0.4);
+}
+
+.form-control-plaintext {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Search Field Animation */
+input[type="search"] {
+    width: 200px;
+    transition: width 0.4s ease;
+}
+
+input[type="search"]:focus {
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

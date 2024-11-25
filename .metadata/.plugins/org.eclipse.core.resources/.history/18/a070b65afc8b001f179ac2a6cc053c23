@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Details</title>
+</head>
+<body>
+    <h2>Driver Details</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>NIC</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <c:forEach var="dr" items="${driverDetails}">
+            	
+                <c:set var="name" value="${dr.dname}" />
+                <c:set var="phone" value="${dr.phone}" />
+                <c:set var="email" value="${dr.demail}" />
+                <c:set var="nic" value="${dr.nic}" />
+                <c:set var="username" value="${dr.dusername}" />
+                <c:set var="password" value="${dr.dpassword}" />
+                <tr>
+                    
+                    <td>${dr.dname}</td>
+                    <td>${dr.phone}</td>
+                    <td>${dr.demail}</td>
+                    <td>${dr.nic}</td>
+                    <td>${dr.dusername}</td>
+                    <td>${dr.dpassword}</td>
+                    <td>
+                        <a href="updateDriverServlet?id=${dr.did}">Modify</a>
+                        <form action="deleteDriverServlet" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="${dr.did}" />
+                            <input type="submit" value="Delete" onclick="return confirm('Are you sure want to delete this driver?');" />
+                        </form>
+                    </td>
+                </tr>
+            </c:forEach>
+            <c:if test="${empty driverDetails}">
+                <tr>
+                    <td colspan="8">No drivers found.</td>
+                </tr>
+            </c:if>
+        </tbody>
+    </table>
+</body>
+</html>

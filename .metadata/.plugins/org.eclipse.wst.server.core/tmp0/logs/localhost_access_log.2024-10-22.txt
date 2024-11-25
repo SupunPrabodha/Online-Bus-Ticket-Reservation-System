@@ -1,0 +1,13 @@
+127.0.0.1 - - [22/Oct/2024:22:16:00 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:16:01 +0530] "GET /SeatReserve/feedback.jsp HTTP/1.1" 200 10480
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:16:01 +0530] "GET /SeatReserve/css/Bus.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:16:01 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [22/Oct/2024:22:29:45 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:29:46 +0530] "GET /SeatReserve/deleteuser.jsp HTTP/1.1" 200 7951
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:29:46 +0530] "GET /SeatReserve/Style.css HTTP/1.1" 404 776
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:29:46 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:31:06 +0530] "GET /SeatReserve/deleteuser.jsp HTTP/1.1" 200 7951
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:31:06 +0530] "GET /SeatReserve/Style.css HTTP/1.1" 404 776
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:43:53 +0530] "GET /SeatReserve/deleteuser.jsp HTTP/1.1" 200 7951
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:43:54 +0530] "GET /SeatReserve/Style.css HTTP/1.1" 404 776
+0:0:0:0:0:0:0:1 - - [22/Oct/2024:22:43:54 +0530] "GET /favicon.ico HTTP/1.1" 404 762

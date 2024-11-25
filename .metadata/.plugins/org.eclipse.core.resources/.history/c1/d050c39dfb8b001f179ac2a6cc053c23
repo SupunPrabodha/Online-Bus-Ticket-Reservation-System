@@ -1,0 +1,163 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Payment Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c9ebfd;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .table-container {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        input[type="button"] {
+            width: 100%;
+            background-color: #3a7cdf;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect */
+        input[type="button"]:hover {
+            background-color: #447cb1;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Active (click) effect */
+        input[type="button"]:active {
+            background-color: #41cdae;
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Passenger Payment Details</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Passenger ID</th>
+                    <th>Passenger Name</th>
+                    <th>Card Number</th>
+                    <th>CVV Code</th>
+                    <th>Expire Date</th>
+                    <th>Email</th>
+                    <th>Payment Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <c:forEach var="pass" items="${passDetails}">
+                
+                   <c:set var="pid" value="${pass.pid}"/>
+                   <c:set var="passenger_name" value="${pass.passenger_name}"/>
+                   <c:set var="card_number" value="${pass.card_number}"/>
+                   <c:set var="CVV_code" value="${pass.CVV_code}"/>
+                   <c:set var="expire_date" value="${pass.expire_date}"/>
+                   <c:set var="email" value="${pass.email}"/>
+                   <c:set var="payment_amount" value="${pass.payment_amount}"/>
+                
+                    <tr>
+                        <td><c:out value="${pass.pid}"/></td>
+                        <td><c:out value="${pass.passenger_name}"/></td>
+                        <td><c:out value="${pass.card_number}"/></td>
+                        <td><c:out value="${pass.CVV_code}"/></td>
+                        <td><c:out value="${pass.expire_date}"/></td>
+                        <td><c:out value="${pass.email}"/></td>
+                        <td><c:out value="${pass.payment_amount}"/></td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+        </table>
+    </div>
+   
+  <div style="display: flex; justify-content: center; margin-top: 20px;"> 
+    <c:url value="UpdatePayment.jsp" var="payupdate">
+      <c:param name="pid" value="${pid}"/>
+      <c:param name="passenger_name" value="${passenger_name}"/>
+      <c:param name="card_number" value="${card_number}"/>
+      <c:param name="CVV_code" value="${CVV_code}"/>
+      <c:param name="expire_date" value="${expire_date}"/>
+      <c:param name="email" value="${email}"/>
+      <c:param name="payment_amount" value="${payment_amount}"/>
+    </c:url>
+    
+    <a href="${payupdate}">
+    <input type="button" name="update" value="UPDATE PAYMENT DETAILS" style="margin-right: 10px; width: auto;">
+    </a>
+    
+    <c:url value="deletepaydetails.jsp" var="passdelete">
+         <c:param name="pid" value="${pid}"/>
+         <c:param name="passenger_name" value="${passenger_name}"/>
+         <c:param name="card_number" value="${card_number}"/>
+         <c:param name="CVV_code" value="${CVV_code}"/>
+         <c:param name="expire_date" value="${expire_date}"/>
+         <c:param name="email" value="${email}"/>
+         <c:param name="payment_amount" value="${payment_amount}"/>
+    </c:url>
+    <a href="${passdelete}">
+    <input type="button" name="delete" value="DELETE PAYMENT DETAILS" style="margin-left: 10px; width: auto;">
+    </a>
+</div>
+</body>
+</html>
