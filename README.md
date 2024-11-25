@@ -87,7 +87,7 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
 
 ## ScreenShots
 
-###Home page
+### Home page
 ![image](https://github.com/user-attachments/assets/c3b80ad5-17b0-48dc-91b3-a848c4cca538)
 
 ### Admin DashBoard
