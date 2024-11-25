@@ -49,7 +49,7 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
 ### Steps to Deploy:  
 1. **Clone the Repository**:  
    ```bash  
-   git clone https://github.com/your-github-username/online-bus-ticket-reservation.git  
+   git clone https://github.com/SupunPrabodha/online-bus-ticket-reservation.git  
 2. Import Project into Eclipse:
 
 - Open Eclipse IDE.
