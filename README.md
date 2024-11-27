@@ -52,7 +52,7 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
    git clone https://github.com/SupunPrabodha/online-bus-ticket-reservation.git  
 2. Import Project into Eclipse:
 
-- Open Eclipse IDE.
+- Open **Eclipse IDE**.
 - Select **File > Import > Existing Projects into Workspace**.
 - Choose the cloned project folder and click **Finish**.
 
