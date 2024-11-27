@@ -17,7 +17,7 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
   - Proceed with payments.  
   - Receive payment confirmations.  
 - **Miscellaneous**:  
-  - View "About Us" and "Contact Us" pages.  
+  - View **"About Us"** and **"Contact Us"** pages.  
   - Logout securely.  
 
 ### Admin Features:  
