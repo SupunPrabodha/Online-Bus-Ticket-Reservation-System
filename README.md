@@ -26,12 +26,12 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
 ## Technologies Used  
 
 ### Languages:  
-- HTML  
-- CSS  
-- SCSS  
-- Java  
-- JavaScript  
-- SQL  
+- **HTML**  
+- **CSS**  
+- **SCSS**  
+- **Java**  
+- **JavaScript**  
+- **SQL**  
 
 ### Tools:  
 - **Eclipse IDE**  
