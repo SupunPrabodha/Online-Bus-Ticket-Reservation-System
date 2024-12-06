@@ -81,7 +81,7 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
 - Set the **username** and **password** for the admin in the **workbench** database. Because there are no any registration method for the administrator.
 
 ## Project Structure
-- **Frontend**: Built with HTML, CSS, SCSS, and JavaScript.
+- **Frontend**: Built with **HTML**, **CSS**, **SCSS**, and **JavaScript**.
 - **Backend**: Java-powered **servlets** and **JSPs**.
 - **Database**: MySQL, for storing user accounts, feedback, reservations, and transactions.
 
