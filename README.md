@@ -82,7 +82,7 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
 
 ## Project Structure
 - **Frontend**: Built with HTML, CSS, SCSS, and JavaScript.
-- **Backend**: Java-powered servlets and JSPs.
+- **Backend**: Java-powered **servlets** and JSPs.
 - **Database**: MySQL, for storing user accounts, feedback, reservations, and transactions.
 
 ## ScreenShots
