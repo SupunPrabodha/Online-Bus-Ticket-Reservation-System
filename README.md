@@ -58,7 +58,7 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
 
 3. Set Up Database:
 
-- Open **MySQL Workbench** and create a new database (e.g., `bus_ticket_db`).
+- Open **MySQL Workbench** and create a **new database** (e.g., `bus_ticket_db`).
 - Import the provided SQL script (`database_script.sql`) to initialize the database schema and populate it with sample data.
 
 4. Configure Tomcat Server:
