@@ -102,3 +102,4 @@ This project was developed as the **2nd-year, 1st-semester Object-Oriented Progr
 ### Login Page
 ![image](https://github.com/user-attachments/assets/e8982d01-5362-4c4d-a45a-c341b42d43fc)
 
+⭐ If you like this project, don't forget to star it! ⭐
